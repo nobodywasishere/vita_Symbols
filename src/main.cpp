@@ -44,8 +44,9 @@ int main(int argc, char *argv[]) {
 			"This is a test of PS Vita fonts"
 		);
 
-		int initpos = 30;
-		float scale = 4.0f;
+		int initpos = 50;
+		float scale = 1.5f;
+		int spacescale = 50;
 
 		vita2d_pvf_draw_text(
 			symbols,10,initpos,
@@ -54,19 +55,19 @@ int main(int argc, char *argv[]) {
 		);
 
 		vita2d_pvf_draw_text(
-			symbols,10,initpos+30,
+			symbols,10,initpos+spacescale,
 			RGBA8(255,255,255,255),scale,
 			"0123456789"
 		);
 
 		vita2d_pvf_draw_text(
-			symbols,10,initpos+60,
+			symbols,10,initpos+spacescale*2,
 			RGBA8(255,255,255,255),scale,
 			"!\"#$%'()*+,-./"
 		);
 
 		vita2d_pvf_draw_text(
-			symbols,10,initpos+90,
+			symbols,10,initpos+spacescale*3,
 			RGBA8(255,255,255,255),scale,
 			":;<=>@ "
 		);
