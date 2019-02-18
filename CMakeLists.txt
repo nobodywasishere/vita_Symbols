@@ -11,7 +11,7 @@ endif()
 project(vita_symbols)
 include("${VITASDK}/share/vita.cmake" REQUIRED)
 
-set(VITA_APP_NAME "Chuck Norris Jokes")
+set(VITA_APP_NAME "Vita Symbols")
 set(VITA_TITLEID  "VGEE00003")
 set(VITA_VERSION  "01.00")
 
@@ -73,5 +73,5 @@ vita_create_self(${PROJECT_NAME}.self ${PROJECT_NAME}.elf)
 vita_create_vpk(${PROJECT_NAME}.vpk ${VITA_TITLEID} ${PROJECT_NAME}.self
   VERSION ${VITA_VERSION}
   NAME ${VITA_APP_NAME}
-  FILE fonts/psexchar.otf FILE fonts/psexchar.otf
+  FILE fonts/psexchar.pvf FILE fonts/psexchar.pvf
 )
