@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
 
   // the default font to be used. can also load from file using other formats.
 	pgf = vita2d_load_default_pgf();
-	symbols = vita2d_load_custom_pvf("app0:/fonts/psexchar.pvf");
+	symbols = vita2d_load_custom_pvf("sa0:data/font/pvf/psexchar.pvf");
 
 	//set up the pad?
 	memset(&pad, 0, sizeof(pad));

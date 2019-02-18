@@ -73,5 +73,4 @@ vita_create_self(${PROJECT_NAME}.self ${PROJECT_NAME}.elf)
 vita_create_vpk(${PROJECT_NAME}.vpk ${VITA_TITLEID} ${PROJECT_NAME}.self
   VERSION ${VITA_VERSION}
   NAME ${VITA_APP_NAME}
-  FILE fonts/psexchar.pvf FILE fonts/psexchar.pvf
 )
